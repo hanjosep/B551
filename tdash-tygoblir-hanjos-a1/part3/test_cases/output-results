@@ -1,0 +1,55 @@
+NAME	REQ-TEAM		DENY
+djcran djcran-vkvats-nthakurd sahmaini
+sahmaini sahmaini _
+sulagaop sulagaop-xxx-xxx _
+fanjun fanjun-xxx nthakurd
+nthakurd nthakurd djcran,fanjun
+vkvats vkvats-sahmaini _
+
+
+team1: sulagaop-fanjun-sahmaini
+team2: nthakurd-djcran-vkvats
+
+K = 30; GRADING TIME PER TEAM-> (team1, team2) = 60
+DIFF-GROUP-SIZE = +1 (sahmaini, fanjun, nthakurd, vkvats) = 4
+M = 20; DEAN COMPLAINTS PER VIOLATION-> (nthakurd:djcran) = 20
+N = 10; NOT FILLING REQUEST-TEAM -> (vkvats:sahmaini): 10
+
+from book:Each student who is not assigned to someone they requested sends a complaint email, which will take n minutes for the instructor to read and respond. If a student requested to work with multiple people,then they will send a separate email for each person they were not assigned to.
+
+===94
+
+t1: djcran-vkvats-nthakurd
+t2: sahmaini
+t3: sulagaop-fanjun
+
+k = 30; t1,t2,t3 => 90
+diff-group-size = 1; (sulagaop, vkvats, nthakurd) = 3
+m = 20; complaints; (nthakurd:djcran) = 20
+n = 10; not filling request; vkvats:sahmaini= 10
+=== 123
+
+<<<<<<< HEAD
+=======
+otherinput:
+
+djcran djcran-xxx fanjun
+sahmaini sahmaini fanjun
+sulagaop sulagaop-xxx fanjun
+fanjun fanjun nthakurd,djcran,sahmaini,nthakurd,vkvats,sulagaop
+nthakurd nthakurd fanjun
+vkvats vkvats-xxx fanjun
+
+
+team1: fanjun
+team2: djcran-vkvats
+team3: sahmaini-nthakurd-sulagaop
+
+K = 30; GRADING TIME PER TEAM-> (team1, team2,t3) = 90
+DIFF-GROUP-SIZE = +1 (sulagaop,sahmaini,nthakurd) = 3
+M = 20; DEAN COMPLAINTS PER VIOLATION-> (none) = 0
+N = 10; NOT FILLING REQUEST-TEAM -> (none): 
+
+
+at a cost of 93 minutes
+>>>>>>> f63aa26e45b257ed47d36e9775508db405e797bb
